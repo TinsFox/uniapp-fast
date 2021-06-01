@@ -40,7 +40,8 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0",
@@ -79,6 +80,8 @@
   },
   "devDependencies": {
     "@babel/runtime": "~7.12.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@dcloudio/types": "*",
     "@dcloudio/uni-automator": "^2.0.0",
     "@dcloudio/uni-cli-shared": "^2.0.0",
@@ -92,8 +95,19 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-plugin-import": "^1.11.0",
+    "commitizen": "^4.2.4",
     "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "husky": "^6.0.0",
     "jest": "^25.4.0",
+    "lint-staged": "^11.0.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
@@ -106,5 +120,13 @@
   ],
   "uni-app": {
     "scripts": {}
+  },
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
