@@ -1,0 +1,38 @@
+{
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uniApp-fast",
+    "navigationBarBackgroundColor": "#4a9ff8",
+    "backgroundColor": "#4a9ff8"
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "title": "首页",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "消息",
+                "fontSize": "16px"
+              }
+            ]
+          }
+        },
+        "aliasPath": "/",
+        "meta": {
+          "name": "index",
+          "auth": false
+        }
+      },
+      "meta": {
+        "name": "index",
+        "auth": false
+      },
+      "name": "index",
+      "aliasPath": "/"
+    }
+  ]
+}
