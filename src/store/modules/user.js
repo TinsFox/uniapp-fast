@@ -38,8 +38,8 @@ const actions = {
   login({ commit }, js_code) {
     const vuexUser = store.state.user;
     if (vuexUser.accessToken && Date.now() < vuexUser.expiresIn) {
-      // TODO:已经登陆后不需要再次登陆
-      console.log("不需要登陆？",vuexUser)
+      // TODO:1. 已经登陆后不需要再次登陆; 2checkSession
+      console.log('不需要登陆？', vuexUser);
       return true;
     }
     const { code } = js_code;
