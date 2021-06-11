@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-
-npx lint-staged
+# TODO:移除commit前的eslint校验
+#npx lint-staged
