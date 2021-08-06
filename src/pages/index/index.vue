@@ -41,6 +41,7 @@ export default {
 
 <style>
 .content {
+  margin-top: 500rpx;
   display: flex;
   flex-direction: column;
   align-items: center;

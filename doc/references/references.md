@@ -13,6 +13,6 @@
 1. 网络请求 [luch-request](https://www.quanzhan.co/luch-request/)
 2. 路由跳转 [uni-simple-router](https://hhyang.cn/v2/)
 
-# 常用设置
+### 常用设置
 
 1. [WebStorm小程序常用设置](https://course.talelin.com/lin/sleeve/5%20webstorm%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE.html)
